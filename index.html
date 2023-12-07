@@ -1,0 +1,341 @@
+
+
+0
+ui-btn
+profile-fileTEZEGHDENTI Oussama
+Tableau de bord
+Formations
+Notes
+Statistiques
+Communauté
+ Chatbot
+online
+Bonjour, je suis Quodup's BOT et je suis une IA créée pour repondre aux questions des trainees . Actuellement, j'ai été entrainé juste pour repondre aux questions à propos la formation HTML , je suis en phase de développement et bientôt je pourrai tout faire
+
+
+0
+ui-btn
+profile-fileTEZEGHDENTI Oussama
+Tableau de bord
+Formations
+Notes
+Statistiques
+Communauté
+ Chatbot
+online
+Bonjour, je suis Quodup's BOT et je suis une IA créée pour repondre aux questions des trainees . Actuellement, j'ai été entrainé juste pour repondre aux questions à propos la formation HTML , je suis en phase de développement et bientôt je pourrai tout faire
+
+FormationsCours HTMLHTML
+Rechercher
+Rechercher
+Vue d'ensemble du tutoriel
+1 - Introduction
+2 - C'est quoi HTML ?
+3 - Création du projet
+4 - Explication
+5 - Continuons notre projet
+6 - Couverture de la boutique
+7 - Section des Produits
+8 - Marques des produits
+9 - Pied de page
+Section des Produits
+ Commentaire
+ui-btn
+Section des Produit 
+à ce niveau nous allons commencer réellement à ajouter du contenu à notre boutique. Nous allons ajouter les produits à vendre.
+
+- Ajoutez tout d’abord l’élément <hr width="90%"> avec des sauts de lignes <br>.
+
+
+L’élément <hr> représente une ligne horizontale indiquant un changement thématique entre les éléments.
+
+
+Vous aurez ainsi le changement d’affichage suivant :
+
+
+ 
+Dans un conteneur <div>, ajoutez une <table> avec une légende <caption>, contenant le texte « Nos Produits », et une seule ligne <tr>.
+
+
+
+Dans la ligne <tr> ajoutez une cellule contenant la première catégorie de produits à afficher, qui est « Accessoires ».
+
+<div>
+        <table align="center" width=90% rules="cols">
+            <caption>
+                <h1>Nos Produits</h1><br><br>
+            </caption>
+            <tr align="center">
+                <td width="350px" rowspan="2">
+                    <div>
+                        <h2><i>Accessoires</i></h2>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+- L’attribut « rules » est utilisé pour spécifier les parties des bordures intérieures qui doivent être visibles. Dans notre table, nous avons utilisé la valeur « cols » qui crée une ligne entre les colonne
+
+- Les éléments <h1> à <h6> représentent des niveaux de titre dans un document. Ils décrivent brièvement le sujet de la section qu'ils introduisent.
+
+- <h1> est le niveau de titre le plus important.
+
+- L’attribut « rowspan » de l’élément <td> est utilisé pour étendre une cellule sur plusieurs lignes.
+
+
+Dans notre cas, nous avons étendu la cellule « Accessoires » sur deux lignes.
+
+
+Vous aurez l’affichage qui suit :
+
+
+
+
+- Ajoutez maintenant trois autres cellules contenant les produits à vendre.
+
+- Pour chaque produit, affichez l’image, le nom, le prix et la période de garantie.
+
+
+
+
+ 
+
+
+
+
+- Chaque <td> contient un conteneur <div> composé d’une image <img> et d’une liste de description <dl>…...</dl>.
+
+- Chaque balise double <dl>…...</dl> contient un terme (ou nom) <dt>…...</dt> contenant le nom du produit et des descriptions <dd>…...</dd> contenant son prix ou sa durée de garantie.
+
+Nos accessoires s’affichent de la manière suivante :
+
+
+
+
+
+
+Ajoutez une autre cellule vide pour compléter le traçage du tableau :
+
+
+
+ <td><h2> <br> </h2></td>
+
+  L’affichage devient : 
+
+
+
+
+
+
+Ajoutez une nouvelle ligne <tr> dans la table contenant un bouton permettant de charger d’autres produits de la même catégorie. 
+
+
+
+
+ <tr>
+ <td colspan="3" align="center">
+ <br><br><br>
+ <input type="button" name="more" value="Charger plus" id="id_more">
+</td>
+ </tr>  
+
+
+
+
+
+
+
+
+
+
+L’attribut « colspan » de l’élément <td> est utilisé pour étendre une cellule sur plusieurs colonnes.Dans notre cas, nous avons étendu la cellule sur trois colonnes.
+
+
+Le bouton s’affiche comme le montre la figure ci-dessous :
+
+
+
+
+
+
+De la même façon, insérez une nouvelle <table> contenant les produits de la catégorie « Matériels ». N’oubliez pas d’ajouter des sauts de ligne.
+
+ <div><br><br><br><br>
+            <table align="center" width=90% rules="cols">
+                <tr align="center">
+                    <td width="350px" rowspan="2">
+                        <div>
+                            <h2><i>Matériels</i></h2>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="elliptique.jpg" width="200" height="200">
+                            <dl>
+                                <dt>
+                                    <h4>Elliptique</h4>
+                                </dt>
+                                <dd>
+                                    1200.00 TND
+                                </dd>
+                                <dd>
+                                    Garantie 2 ans
+                                </dd>
+                            </dl>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="velo-d-appartement.jpg" width="200" height="200">
+                            <dl>
+                                <dt>
+                                    <h4>velo d'appartement</h4>
+                                </dt>
+                                <dd>
+                                    1360.00 TND
+                                </dd>
+                                <dd>
+                                    Garantie 2 ans
+                                </dd>
+                            </dl>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="tapis-de-course.jpg" width="200" height="200">
+                            <dl>
+                                <dt>
+                                    <h4>Tapis de course</h4>
+                                </dt>
+                                <dd>
+                                    1150.00TND
+                                </dd>
+                                <dd>
+                                    Garantie 2 ans
+                                </dd>
+                            </dl>
+                        </div>
+                    </td>
+                    <td>
+                        <h2> <br> </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <br><br><br>
+                        <input type="button" name="more2" value="Charger plus" id="id_more2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+  
+  
+
+
+
+
+
+
+L’interface devient comme suit :
+
+
+
+
+
+
+Aussi, de la même façon, insérez une nouvelle <table> contenant les produits de la catégorie « Vêtements et Chaussures ».
+
+<div>
+        <br><br><br><br>
+        <table align="center" width=90% rules="cols">
+            <tr align="center">
+                <td width="350px" rowspan="2">
+                    <div>
+                        <h2><i> Vêtements et Chaussures</i></h2>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="./resources/short-cadio-fitness-homme.jpg" width="200" height="200">
+                        <dl>
+                            <dt>
+                                <h4>short cadio fitness</h4>
+                            </dt>
+                            <dd>
+                                32.00 TND
+                            </dd>
+                            <dd>
+                                Taille: M/L/XL
+                            </dd>
+                        </dl>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="./resources/t-shirtrunning.jpg" width="200" height="200">
+                        <dl>
+                            <dt>
+                                <h4>t-shirt running</h4>
+                            </dt>
+                            <dd>
+                               18.50 TND
+                            </dd>
+                            <dd>
+                                Taille: M/L/XL
+                            </dd>
+                        </dl>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <img src="./resources/chaussures-de-tennis-homme.jpg" width="200" height="200">
+                        <dl>
+                            <dt>
+                                <h4>chaussures de tennis</h4>
+                            </dt>
+                            <dd>
+                                120.50 TND
+                            </dd>
+                            <dd>
+                                Taille: M/L/XL
+                            </dd>
+                        </dl>
+                    </div>
+                </td>
+                <td>
+                    <h2> <br> </h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <br><br><br>
+                    <input type="button" name="more3" value="Charger plus" id="id_more3">
+                </td>
+            </tr>
+        </table>
+    </div>
+ 
+  
+
+
+
+
+
+L’interface devient comme suit :
+
+
+
+
+
+Nous avons ainsi listé les différents produits à vendre dans notre boutique. Ajoutons maintenant toutes les marques que nous représentons.
+
+ PrécédentSuivant 
+
+
